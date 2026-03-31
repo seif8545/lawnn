@@ -7,7 +7,7 @@
     
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Noto+Naskh+Arabic:wght@400;600&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,600;0,700;0,900;1,600&display=swap" rel="stylesheet">
     
     <style>
         * {
@@ -17,8 +17,8 @@
             margin: 0;
             padding: 0;
             height: 100%;
-            background-color: #fffcf4; /* New off-white */
-            color: #21326c; /* New dark blue */
+            background-color: #fffcf4;
+            color: #21326c;
             font-family: 'DM Sans', sans-serif;
             display: flex;
             flex-direction: column;
@@ -28,7 +28,6 @@
             position: relative;
             overflow: hidden;
         }
-        /* Subtle dot pattern background */
         .bg-pattern {
             position: absolute;
             inset: 0;
@@ -37,7 +36,6 @@
             background-size: 30px 30px;
             opacity: 0.1;
         }
-        /* Top right / Bottom left glowing orbs */
         .glow-1 {
             position: absolute;
             top: -10%; right: -10%;
@@ -65,36 +63,13 @@
             position: relative;
             z-index: 10;
         }
-        .logo-wrapper {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 12px;
-            margin-bottom: 2.5rem;
+        
+        .logo-image {
+            max-width: 180px; 
+            height: auto;
+            margin-bottom: 2rem;
         }
-        .logo-icon {
-            width: 50px;
-            height: 50px;
-            background-color: #21326c;
-            border-radius: 14px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            color: white;
-            box-shadow: 0 10px 25px -5px rgba(33, 50, 108, 0.3);
-        }
-        .logo-text {
-            font-family: 'Playfair Display', serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            line-height: 1;
-        }
-        .logo-arabic {
-            font-family: 'Noto Naskh Arabic', serif;
-            font-size: 1.1rem;
-            color: #21326c;
-            margin-left: 6px;
-        }
+
         h1 {
             font-family: 'Playfair Display', serif;
             font-size: 4rem;
@@ -103,7 +78,7 @@
             line-height: 1.1;
         }
         h1 em {
-            color: #ff9044; /* New orange */
+            color: #ff9044;
             font-style: italic;
         }
         p {
@@ -115,7 +90,6 @@
             line-height: 1.6;
         }
         
-        /* New CTA Button Styles */
         .cta-button {
             display: inline-block;
             background-color: #ff9044;
@@ -133,7 +107,7 @@
         .cta-button:hover {
             transform: translateY(-3px);
             box-shadow: 0 15px 25px -5px rgba(255, 144, 68, 0.5);
-            background-color: #ff9f5c; /* Slightly lighter orange on hover */
+            background-color: #ff9f5c;
         }
 
         @keyframes fadeIn {
@@ -144,6 +118,7 @@
         @media (max-width: 600px) {
             h1 { font-size: 2.75rem; }
             p { font-size: 1.1rem; }
+            .logo-image { max-width: 140px; }
         }
     </style>
 </head>
@@ -153,7 +128,7 @@
     <div class="glow-2"></div>
 
     <div class="container">
-        
+        <img src="../images/lawnn.png" alt="Lawnn Logo" class="logo-image">
 
         <h1>Something <em>special</em><br>is coming.</h1>
         <p>We are building the premier platform for Egyptian creative talent.</p>
